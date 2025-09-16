@@ -2,7 +2,7 @@ import re
 import numpy as np 
 import pandas as pd
 
-#-----------------------------------Connectivity-----------------------------#
+#-----------------------------------Connectivity----------------------------#
 
         #----dual sim----#
 def extract_is_dual_sim (connectivity):
