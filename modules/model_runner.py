@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 def run_model(model, num_feature, cat_feature, data, target, feature_range=(0, 1), test_size=0.2, random_state=42, n_neighbors=5, imputer='knn', scaler='minmax', n_components=0.95):
 
-"""
+    """
     Hàm chạy pipeline: Tiền xử lý → PCA → Huấn luyện model → Đánh giá
     
     Parameters
@@ -34,8 +34,8 @@ def run_model(model, num_feature, cat_feature, data, target, feature_range=(0, 1
  # ------------------------------
  # 1. Chuẩn bị dữ liệu
  # ------------------------------
-    x = cleaned_data[num_feature + cat_feature]
-    y = cleaned_data[target]
+    x = data[num_feature + cat_feature]
+    y = data[target]
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size, random_state=random_state)
 
 # ------------------------------
