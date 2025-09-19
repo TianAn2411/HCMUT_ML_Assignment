@@ -1,22 +1,22 @@
 # Bài Tập Lớn Học Máy – CO3117 (Nhóm CEML2, Lớp TN01)
 
-## 📚 Thông tin môn học
+## Thông tin môn học
 - **Tên môn học:** Học Máy  
 - **Mã môn:** CO3117  
 - **Lớp:** TN01 – Nhóm CEML2  
 - **Học kỳ:** 251, Năm học 2025 – 2026  
 
-## 👨‍🏫 Giảng viên hướng dẫn
+## Giảng viên hướng dẫn
 - **TS. Lê Thành Sách**
 
-## 👥 Thành viên nhóm
+## Thành viên nhóm
 - **Trương Thiên Ân** – 2310190 – an.truong241105@hcmut.edu.vn  
 - **Lại Nguyễn Hoàng Hưng** – 2311327 – hung.lai2805@hcmut.edu.vn  
 - **Nguyễn Tô Quốc Việt** – 2313898 – viet.nguyenluminous@hcmut.edu.vn  
 
 ---
 
-## 🎯 Mục tiêu bài tập lớn
+## Mục tiêu bài tập lớn
 1. **Xử lý dữ liệu đầu vào đầy đủ**  
    - Xử lý giá trị thiếu bằng kỹ thuật *imputation*.  
    - Mã hóa các biến phân loại bằng *encoding*.  
@@ -32,7 +32,7 @@
 
 ---
 
-## 📂 Dataset
+## Dataset
 - **Tên:** *Mobile Phones in Indian Market Datasets*  
 - **Nguồn:** [Kaggle Link](https://www.kaggle.com/datasets/kiiroisenkoxx/2025-mobile-phones-in-indian-market-datasets/data?select=mobiles_uncleaned.csv)  
 - **Mô tả:** 11.786 mẫu, 14 thuộc tính về đặc điểm kỹ thuật và thông tin của các dòng điện thoại.  
@@ -46,7 +46,7 @@ Dataset đã được push lên GitHub, đã được cấu hình sẵn trong no
 
 ---
 
-## ▶️ Hướng dẫn chạy notebook
+##  Hướng dẫn chạy notebook
 - Mở notebook **`Assignment1_CEML2.ipynb`** trong Google Colab.  
 - Chọn **Runtime → Run All**.  
 - Notebook đã được cấu hình sẵn: import thư viện, tải dataset, xử lý và chạy mô hình.  
@@ -54,7 +54,7 @@ Dataset đã được push lên GitHub, đã được cấu hình sẵn trong no
 
 ---
 
-## 🗂️ Cấu trúc dự án
+## Cấu trúc dự án
 ```
 MachineLearning_Assigment/
 │
@@ -74,7 +74,7 @@ MachineLearning_Assigment/
 
 ---
 
-## 🔎 Mô tả các module
+## Mô tả các module
 - **`__init__.py`**:  
   Khai báo và gom tất cả hàm trong `feature_extractors.py` để tiện import (`extract_is_dual_sim`, `extract_cpu_speed`, `extract_ram`, ...).  
 
@@ -96,13 +96,13 @@ MachineLearning_Assigment/
 
 ---
 
-## 📑 Báo cáo & Notebook
+## Báo cáo & Notebook
 - [Link báo cáo]()  *(điền sau)*  
 - [Link notebook]() *(điền sau)*  
 
 ---
 
-## 📌 Liên hệ
+## Liên hệ
 Nếu có thắc mắc, vui lòng liên hệ:  
 - **Trương Thiên Ân** – an.truong241105@hcmut.edu.vn  
 - **Lại Nguyễn Hoàng Hưng** – hung.lai2805@hcmut.edu.vn  
