@@ -17,22 +17,35 @@
 ---
 
 ## Mục tiêu bài tập lớn
-1. **Xử lý dữ liệu đầu vào đầy đủ**  
-   - Xử lý giá trị thiếu bằng kỹ thuật *imputation*.  
-   - Mã hóa các biến phân loại bằng *encoding*.  
+ • Hiểu và áp dụng được quy trình pipeline học máy truyền thống, bao gồm:
+ tiền xử lý dữ liệu, trích xuất đặc trưng, huấn luyện và đánh giá mô hình.
+ • Rèn luyện kỹ năng triển khai mô hình học máy trên các loại dữ liệu khác nhau:
+ bảng, văn bản, và ảnh.
+ • Phát triển khả năng phân tích, so sánh, và đánh giá hiệu quả của các mô hình
+ học máy thông qua các chỉ số đo lường.
+ • Rèn luyện kỹ năng lập trình, thử nghiệm, và tổ chức báo cáo khoa học
+ 
+## Assignment 1
+## Mục tiêu bài tập
+1. **Xử lý dữ liệu đầu vào**  
+   - Thực hành xử lý giá trị thiếu (*missing values*) bằng kỹ thuật imputation.  
+   - Thực hành mã hóa biến phân loại (*categorical features*) bằng kỹ thuật encoding.  
 
-2. **Xây dựng pipeline học máy hoàn chỉnh cho dữ liệu dạng bảng (Tabular Data)**  
+2. **Xây dựng pipeline học máy cho dữ liệu dạng bảng (Tabular Data)**  
    - Chuẩn hóa dữ liệu bằng các kỹ thuật impute và encoding.  
-   - Thực hiện giảm chiều dữ liệu bằng PCA (nếu cần).  
-   - Áp dụng các mô hình học máy: Logistic Regression, SVM, Random Forest.  
+   - Lựa chọn và thực hiện giảm chiều dữ liệu bằng PCA (nếu cần).  
+   - Áp dụng các mô hình học máy (ví dụ: Logistic Regression, SVM, Random Forest).  
 
 3. **So sánh và đánh giá mô hình**  
    - So sánh hiệu quả giữa các mô hình đã huấn luyện.  
-   - Báo cáo kết quả, bao gồm: phân tích dữ liệu (EDA), mô tả pipeline, cấu hình các bước xử lý và đánh giá.  
+   - Đưa ra báo cáo kết quả: phân tích dữ liệu (EDA), mô tả pipeline, cấu hình các bước xử lý, và đánh giá.  
+
+4. **Mở rộng (Extension)**  
+   - Thử nghiệm hoặc tối ưu thêm (mô hình nâng cao, kỹ thuật ensemble, tuning hyperparameters, …).  
 
 ---
 
-## Dataset
+### Dataset
 - **Tên:** *Mobile Phones in Indian Market Datasets*  
 - **Nguồn:** [Kaggle Link](https://www.kaggle.com/datasets/kiiroisenkoxx/2025-mobile-phones-in-indian-market-datasets/data?select=mobiles_uncleaned.csv)  
 - **Mô tả:** 11.786 mẫu, 14 thuộc tính về đặc điểm kỹ thuật và thông tin của các dòng điện thoại.  
@@ -43,6 +56,28 @@ Dataset đã được push lên GitHub, đã được cấu hình sẵn trong no
 ```bash
 !wget https://raw.githubusercontent.com/HoangHungLN/MachineLearning_Assigment/refs/heads/main/data/mobiles_uncleaned.csv -O mobiles_uncleaned.csv
 ```
+### Mô tả các module
+- **`__init__.py`**:  
+  Khai báo và gom tất cả hàm trong `feature_extractors.py` để tiện import (`extract_is_dual_sim`, `extract_cpu_speed`, `extract_ram`, ...).  
+
+- **`feature_extractors.py`**:  
+  Chứa các hàm *feature engineering* để trích xuất đặc trưng từ dữ liệu thô (chuỗi văn bản) thành dạng số:  
+  - `extract_is_dual_sim`, `extract_is_5g`, `extract_is_nfc`  
+  - `extract_cpu_brand`, `extract_cpu_speed`, `extract_cpu_core`  
+  - `extract_ram`, `extract_rom`, `extract_battery`, `extract_fast_charging`  
+  - `extract_screen_size`, `extract_refresh_rate`, `extract_ppi`  
+  - `extract_rear`, `extract_front_camera`  
+  - `extract_expandable_storage`, `extract_os`  
+
+- **`model_runner.py`**:  
+  Định nghĩa hàm `run_model(...)` để xây dựng pipeline:  
+  - Tiền xử lý dữ liệu (imputation, scaling, encoding).  
+  - Giảm chiều dữ liệu bằng PCA.  
+  - Huấn luyện mô hình (Logistic Regression, SVM, Random Forest).  
+  - Trả về metrics (Accuracy, Precision, Recall, F1, Explained Variance %).  
+
+---
+
 
 ---
 
