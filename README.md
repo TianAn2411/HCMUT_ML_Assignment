@@ -138,9 +138,10 @@ Mình (Trương Thiên Ân) xin gửi lời cảm ơn đến
 - **Assignment 1**
   
   Trong bài tập lớn này, mình phụ trách chính các phần:
-  - **Code EDA (Exploratory Data Analysis)**: trực quan hóa, phân tích dữ liệu.  
-  - **Code model**: xây dựng và huấn luyện các mô hình học máy (Logistic Regression, SVM, Random Forest).  
-  - **Phân tích biến & preprocessing**: đánh giá các đặc trưng, xử lý missing values, encoding, chuẩn hóa dữ liệu, chuẩn bị đầu vào cho pipeline.
+  - **Code EDA (Exploratory Data Analysis)**: trực quan hóa và phân tích dữ liệu.  
+  - **Code các modules**: xây dựng các hàm xử lý đặc trưng.  
+  - **Phân tích biến & preprocessing**: đánh giá các đặc trưng, xử lý missing values, encoding, chuẩn hóa dữ liệu, chuẩn bị đầu vào cho pipeline.  
+  - **Hỗ trợ phân tích dữ liệu và đề xuất hướng giải quyết**: cùng nhóm đưa ra nhận xét và ý tưởng cải thiện.  
 - **Assignment 2 (Coming soon)**
 - **Assignment 3 (Coming soon)**
 
