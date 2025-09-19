@@ -49,10 +49,7 @@
 - **Mục tiêu:** phân loại điện thoại theo giá (`low / medium / high`).  
 
 **Cách tải dataset trong Colab:**  
-Dataset đã được push lên GitHub, đã được cấu hình sẵn trong notebook để đảm bảo sẽ tự động tải sau khi nhấn Run Time -> Run all:
-```bash
-!wget https://raw.githubusercontent.com/HoangHungLN/MachineLearning_Assigment/refs/heads/main/data/mobiles_uncleaned.csv -O mobiles_uncleaned.csv
-```
+Dataset đã được push lên GitHub, đã được cấu hình sẵn trong notebook để đảm bảo sẽ tự động tải sau khi nhấn Run Time -> Run all
 ### Mô tả các module
 - **`__init__.py`**:  
   Khai báo và gom tất cả hàm trong `feature_extractors.py` để tiện import (`extract_is_dual_sim`, `extract_cpu_speed`, `extract_ram`, ...).  
