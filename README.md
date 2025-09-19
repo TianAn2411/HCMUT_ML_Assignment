@@ -124,3 +124,23 @@ Nếu có thắc mắc, vui lòng liên hệ:
 - **Trương Thiên Ân** – an.truong241105@hcmut.edu.vn  
 - **Lại Nguyễn Hoàng Hưng** – hung.lai2805@hcmut.edu.vn  
 - **Nguyễn Tô Quốc Việt** – viet.nguyenluminous@hcmut.edu.vn  
+
+## Acknowledgement
+Đây là bản sao bài tập lớn môn **CO3117 – Học Máy** (Lớp TN01, Nhóm CEML2, Học kỳ 251, Năm học 2025–2026).  
+Mình (Trương Thiên Ân) xin gửi lời cảm ơn đến 
+### Giảng viên hướng dẫn
+- **TS. Lê Thành Sách** 
+### các thành viên nhóm:  
+- Lại Nguyễn Hoàng Hưng 
+- Nguyễn Tô Quốc Việt
+
+## My Contribution
+
+Trong bài tập lớn này, mình phụ trách chính các phần:
+- **Code EDA (Exploratory Data Analysis)**: trực quan hóa, phân tích dữ liệu.  
+- **Code model**: xây dựng và huấn luyện các mô hình học máy (Logistic Regression, SVM, Random Forest).  
+- **Phân tích biến & preprocessing**: đánh giá các đặc trưng, xử lý missing values, encoding, chuẩn hóa dữ liệu, chuẩn bị đầu vào cho pipeline.  
+
+Repo này mình clone về GitHub cá nhân để ghi nhận sự tham gia và lưu giữ kết quả học tập. 
+
+
