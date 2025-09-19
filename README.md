@@ -115,7 +115,7 @@ MachineLearning_Assignment/
 
 ## Notebook
  
-- [Link notebook](https://colab.research.google.com/drive/1saG65yL3ieFIaZLorNRLfMgdfchSFudX?usp=sharing)
+- [Link notebook Assignment 1](https://colab.research.google.com/drive/1saG65yL3ieFIaZLorNRLfMgdfchSFudX?usp=sharing)
 
 ---
 
